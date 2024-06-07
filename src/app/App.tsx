@@ -7,6 +7,7 @@ import { classNames } from "shared/lib/classNames/classNames"
 import { MainPage } from "pages/MainPage"
 import { AboutPage } from "pages/AboutPage"
 import { AppRouter } from "./providers/router"
+import { Navbar } from "widgets/Navbar"
 
 
 function App() {
@@ -15,10 +16,9 @@ function App() {
 
     return (
         <div className={classNames("app", {}, [theme])}>
-            <button onClick={toggleTheme}>TOGGLE</button>
-            <Link to={'/'}>Главная</Link>
-            <Link to={'about'}>О проекте</Link>
+            <Navbar/>
             <AppRouter/>
+            <button onClick={toggleTheme}>TOGGLE</button>
         </div>
     )
 }

@@ -18,5 +18,5 @@ export default function AppRouter({}: Props) {
                 ))}
             </Routes>
         </Suspense>
-)
+    )
 }
