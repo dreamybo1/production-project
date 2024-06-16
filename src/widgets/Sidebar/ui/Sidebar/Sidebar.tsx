@@ -19,7 +19,14 @@ export const Sidebar: FC<SidebarProps> = (props) => {
     };
 
     return (
-        <div className={classNames(styles.Sidebar, { [styles.collapsed]: collapsed }, [className])}>
+        <div className={
+            classNames(
+                styles.Sidebar,
+                { [styles.collapsed]: collapsed },
+                [className],
+            )
+        }
+        >
             <Button
                 onClick={onToggle}
             >
